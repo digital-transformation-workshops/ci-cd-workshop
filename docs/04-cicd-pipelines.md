@@ -20,17 +20,17 @@ Create a file called pr-openning.yaml inside ./github/workflows/ and add the mis
 
 ```bash
 name: Feature Branches & PR Opening Workflow
-  run-name: "Build and Test by @${{ github.actor }}"
-  on:
-    pull_request:
-      branches:
-        - main
-      paths-ignore:
-        - "*.md"
-  permissions: read-all
-  jobs:
-    unit-tests:
-      runs-on: ubuntu-latest
+run-name: "Build and Test by @${{ github.actor }}"
+on:
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - "*.md"
+permissions: read-all
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v3
 
