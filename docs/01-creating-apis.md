@@ -67,18 +67,6 @@ start-server-dev = "dtw_lab.lab2:run_server_dev"
 start-server = "dtw_lab.lab2:run_server_prod"
 ```
 
-We should also some new dependencies to the dependencies list since we will need them for this lab
-
-```toml
-dependencies = [
-...
-"uvicorn== 0.41.0",
-"fastapi==0.133.1",
-"pytest==9.0.2",
-"pytest-mock==3.15.1",
-]
-```
-
 Note that we have created two entry points:
 
 1. **start-server-dev**: This is a development server configuration that runs on port 8000 with hot reloading enabled (reload=True), meaning the server will automatically restart when code changes are detected. This is ideal for local development.
