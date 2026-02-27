@@ -12,9 +12,21 @@ By the end of this lab, you will be able to:
 4. Create CI/CD pipelines with GitHub Actions to test, build, and deploy containers.
 
 ## Prerequisites
-
 > [!IMPORTANT]
 > This workshop for you to have completed the **Workshop 3** and have the repository on hand.
+
+Before starting, make sure your environment has the following Python dependencies installed:
+
+- `uvicorn>=0.41.0`
+- `fastapi>=0.133.1`
+- `toml>=0.10.2`
+
+You can **add them manually** to your dependency file (`pyproject.toml`), **or** install them using `uv`:
+
+```bash
+uv add "uvicorn>=0.41.0" "fastapi>=0.133.1" "toml>=0.10.2"
+```
+
 
 ## Workflow Covered
 

@@ -88,7 +88,7 @@ uv run start-server
 respectively.
 
 > [!NOTE]
-> Alternatively, you can run the server directly using `uv run python -m dtw_lab.lab2` after modifying the code to accept command-line arguments, or by activating the virtual environment with `source .venv/bin/activate` and then running Python directly.
+> Alternatively, you can run the server directly using `uv run python -m dtw_lab.lab2` after adding a `if __name__ == "__main__":` block at the bottom of _lab2.py_ that calls `run_server_dev()` (or another run function).
 
 Start the dev server as shown in figure _Starting the server_, and check that you can access the API through your localhost on port 8000 as shown in figure _Accessing the API_
 

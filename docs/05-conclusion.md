@@ -18,5 +18,5 @@ Make sure to add your team number, the student number of all participants and a 
 
 ---
 
-[← Back to Main README](README.md) | [Previous: CICD Pipelines](04-cicd-pipelines.md)
+[← Back to Main README](../README.md) | [Previous: CICD Pipelines](04-cicd-pipelines.md)
 
