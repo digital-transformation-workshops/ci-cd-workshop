@@ -20,11 +20,13 @@ Before starting, make sure your environment has the following Python dependencie
 - `uvicorn>=0.41.0`
 - `fastapi>=0.133.1`
 - `toml>=0.10.2`
+- `pytest==9.0.2`
+- `pytest-mock==3.15.1`
 
 You can **add them manually** to your dependency file (`pyproject.toml`), **or** install them using `uv`:
 
 ```bash
-uv add "uvicorn>=0.41.0" "fastapi>=0.133.1" "toml>=0.10.2"
+uv add "uvicorn>=0.41.0" "fastapi>=0.133.1" "toml>=0.10.2" "pytest==9.0.2" "pytest-mock==3.15.1"
 ```
 
 
