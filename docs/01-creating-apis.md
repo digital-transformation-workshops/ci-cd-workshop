@@ -133,6 +133,15 @@ def get_visualization_version():
     # Using the toml library, get the version field from the "pyproject.toml" file and return it.
 ```
 
+> [!NOTE]
+> You might need to change the backend of matplotlib from the lab1.py file to a non-GUI backend if it crashes
+```python
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+```
+
 When you implement them and run the dev server again, you can call the APIs from your browser and should see results similar to the ones shown in figures _Version API_, _Statistics API_ and _Visualize API_
 
 ![Version API](images/version-api.png)
