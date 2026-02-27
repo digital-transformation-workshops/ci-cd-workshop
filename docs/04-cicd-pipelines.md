@@ -46,7 +46,7 @@ name: Feature Branches & PR Opening Workflow
 
 Once done, create a feature branch, push it, and open a PR. If the pipeline is configured correctly you should see the checks appear on the PR as shown in figure PR running the automatic checks.<img width="619" height="294" alt="image" src="https://github.com/user-attachments/assets/7a94cfe1-f8c2-48b2-bf69-f2d4fb097208" />
 
-Inside the Actions section of your repository you can see the individual steps running. Figure PR Pipeline Steps shows the steps.
+Inside the Actions section of your repository you can see the individual steps running. 
 <img width="643" height="461" alt="image" src="https://github.com/user-attachments/assets/64dce696-1428-4878-84aa-260bb8ebe4aa" />
 
 
