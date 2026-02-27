@@ -40,31 +40,32 @@ Note that this pipeline only deploys once. Typically, we would have different en
 
 _Figure: We use different environments to check that our code changes were successful_
 
-## Configuring GitHub with environment variables and secrets
+##  Creating an Environment and adding manual approvals
 
-To make our Docker image available in the Cloud or push it to a registry we need to add variables and secrets to our pipelines so that the GitHub runners have the correct credentials.
-
-In your repository settings, go to secrets and variables->Actions. In the variables tab, add the variables shown in figure _Variables used by our pipelines_. Ask your professor to grant you a team number and use that.
-
-![Variables used by our pipelines](images/gha_variables.png)
-
-_Figure: Variables used by our pipelines_
-
-In the secrets tag, add the secrets shown in figure _Secrets used by our pipelines_. Ask your professor to provide the actual secret values. As the name states, these are sensitive values. DO NOT SHARE THEM!
-
-![Secrets used by our pipelines](images/gha_secrets.png)
-
-_Figure: Secrets used by our pipelines_
-
-## Adding manual approvals
-
-Now that our pipelines have secrets configured, lets add a manual step before deployment occurs, so we do not have unwanted/accidental deployments.
+Lets add a manual step before deployment occurs, so we do not have unwanted/accidental deployments.
 
 Go to settings->Environments and create an environment named development. Then, check the box "Require reviewers" and grant the appropriate users permissions to approve the deployment action as shown in figure _Protecting our environments through manual approval processes._.
 
 ![Protecting our environments through manual approval processes.](images/gha_environments.png)
 
 _Figure: Protecting our environments through manual approval processes._
+
+## Configuring the environment with environment variables and secrets
+
+To make our Docker image available in the Cloud or push it to a registry we need to add variables and secrets to our pipelines so that the GitHub runners have the correct credentials.
+
+In the environment you created, go to Environment variables and add the variables shown in figure _Variables used by our pipelines_. Ask your professor to grant you a team number and use that.
+
+![Variables used by our pipelines](images/gha_variables.png)
+
+_Figure: Variables used by our pipelines_
+
+Now go to the Environment secrets and add the secrets shown in figure _Secrets used by our pipelines_. Ask your professor to provide the actual secret values. As the name states, these are sensitive values. DO NOT SHARE THEM!
+
+![Secrets used by our pipelines](images/gha_secrets.png)
+
+_Figure: Secrets used by our pipelines_
+
 
 ## Creating the pipeline that runs on PR
 
